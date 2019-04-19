@@ -4,7 +4,7 @@ Flask_WTF==0.14.2
 requests==2.18.4
 WTForms==2.1
 Flask==0.12.2
-nltk==3.2.5
+nltk==3.4.1
 gunicorn==19.1.1
 vaderSentiment==2.5
 Flask-Session==0.3.1
