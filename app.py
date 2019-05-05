@@ -22,7 +22,7 @@ def imagepro_upload_file():
         faceDetected = False
         num_faces = 0
         to_send = ''
-        return jsonify('Görüntü işleme başarısız.')
+        return jsonify('Basarisiz')
     else:
         faceDetected = True
         num_faces = len(faces)
@@ -33,7 +33,7 @@ def imagepro_upload_file():
         image_content = cv2.imencode('.jpg', image)[1].tostring()
         encoded_image = base64.encodestring(image_content)
         to_send = 'data:image/jpg;base64, ' + str(encoded_image, 'utf-8')
-        result={"Bulunan Yüz Sayısı":num_faces,"Resim":to_send}
+        result={"BulunanYuzSayisi":num_faces,"Resim":to_send}
 
         return jsonify(result)
 
@@ -69,7 +69,7 @@ def textpro():
         pos_sent = analyzed_sent[-1]
         neg_sent = analyzed_sent[0]
         word_cloud = render_word_cloud(file_contents)
-        jsontext={"En Pozitif Cümle":pos_sent,"En Negatif Cümle":neg_sent,"Kullanılan Kelimeler(Resim Base 64)":word_cloud}
+        jsontext={"EnPozitifCumle":pos_sent,"EnNegatifCumle":neg_sent,"KullanilanKelimeler":word_cloud}
         post_control = 1
         return jsonify(jsontext)
 
