@@ -5,7 +5,7 @@ requests==2.18.4
 WTForms==2.1
 Flask==0.12.2
 nltk==3.4.1
-gunicorn==19.1.1
+gunicorn==19.5.0
 vaderSentiment==2.5
 opencv-python==3.1.0.4
 Flask-Session==0.3.1
