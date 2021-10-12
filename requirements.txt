@@ -7,7 +7,7 @@ Flask==0.12.2
 nltk==3.4.1
 gunicorn==19.1.1
 vaderSentiment==2.5
-opencv-python==3.1.0.4
+opencv-python==4.2.0.32
 Flask-Session==0.3.1
 alembic==0.9.9
 bcrypt==3.1.4
